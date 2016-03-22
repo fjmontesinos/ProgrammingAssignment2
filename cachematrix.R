@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
   # Si el determinante de la matriz es 0 -> es singular -> no podremos
   # obtener la matriz inversa -> reportamos el error controlado
   if(det(x$get()) == 0){
-    stop("El argumento x es una matriz singular")
+    stop("El argumento x es una matriz singular no se puede calcular su inversa, su determinante es cero")
   }
   
   s <- x$getsolve()
